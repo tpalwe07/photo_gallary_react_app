@@ -9,7 +9,7 @@ import Search from "./Components/Search";
 function App() {
   return (
     <PhotoContextProvider>
-      <HashRouter basename="photoGallary">
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Navigate to="mountain" replace />} />
